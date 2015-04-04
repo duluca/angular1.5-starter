@@ -1,0 +1,34 @@
+{
+  "name": "angular-starter",
+  "version": "1.0.0",
+  "description": "An Angular project starter, pre-wired with Browserify and Gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://duluca@github.com/duluca/angular-starter.git"
+  },
+  "keywords": [
+    "Angular",
+    "Gulp",
+    "Browserify",
+    "Router"
+  ],
+  "author": "Doguhan Uluca <duluca@gmail.com> (http://techtalkdc.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/duluca/angular-starter/issues"
+  },
+  "homepage": "https://github.com/duluca/angular-starter",
+  "dependencies": {
+    "angular": "^1.4.0-beta.6",
+    "angular-new-router": "^0.5.3"
+  },
+  "devDependencies": {
+    "browserify": "^9.0.7",
+    "gulp": "^3.8.11",
+    "gulp-browserify": "^0.5.1"
+  }
+}
