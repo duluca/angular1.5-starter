@@ -5,8 +5,10 @@
 
 var browserify = require('gulp-browserify');
 var gulp = require('gulp');
+var html2js = require('gulp-html2js');
+var concat = require('gulp-concat');
 
-gulp.task('app-scripts', function () {
+gulp.task('app-scripts', ['html'], function () {
     return gulp.src('app/app.js')
         .pipe(browserify({
             insertGlobals : true,
@@ -17,7 +19,19 @@ gulp.task('app-scripts', function () {
 
 gulp.task('watch', function () {
     gulp.watch('./app/**/*.js', ['default']);
+    gulp.watch('./app/**/*.html', ['default']);
 });
 
+gulp.task('html', function(){
+    return gulp.src('app/**/*.html')
+        .pipe(html2js({
+            outputModuleName: 'templates',
+            base: 'app',
+            rename: function(name) { return './' + name },
+            useStrict: true
+        }))
+        .pipe(concat('templates.js'))
+        .pipe(gulp.dest('app/tmp'));
+});
 
 gulp.task('default', ['app-scripts']);
