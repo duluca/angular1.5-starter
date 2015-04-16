@@ -29,6 +29,8 @@
   "devDependencies": {
     "browserify": "^9.0.7",
     "gulp": "^3.8.11",
-    "gulp-browserify": "^0.5.1"
+    "gulp-browserify": "^0.5.1",
+    "gulp-concat": "^2.5.2",
+    "gulp-html2js": "^0.2.0"
   }
 }
