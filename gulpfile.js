@@ -7,17 +7,18 @@ var browserify = require('gulp-browserify');
 var gulp = require('gulp');
 var html2js = require('gulp-html2js');
 var concat = require('gulp-concat');
+var rename = require('gulp-rename');
 
-gulp.task('app-scripts', ['html'], function () {
+gulp.task('build', ['html'], function () {
     return gulp.src('app/app.js')
         .pipe(browserify({
             insertGlobals : true,
             debug : !process.env.production || true
         }))
-        .pipe(gulp.dest('./public/js'))
+        .pipe(gulp.dest('./public/js'));
 });
 
-gulp.task('watch', function () {
+gulp.task('watch', ['build'], function () {
     gulp.watch('./app/**/*.js', ['default']);
     gulp.watch('./app/**/*.html', ['default']);
 });
@@ -34,4 +35,4 @@ gulp.task('html', function(){
         .pipe(gulp.dest('app/tmp'));
 });
 
-gulp.task('default', ['app-scripts']);
+gulp.task('default', ['build']);
