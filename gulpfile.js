@@ -9,8 +9,8 @@ var html2js = require('gulp-html2js')
 var concat = require('gulp-concat')
 var standard = require('gulp-standard')
 
-gulp.task('build', ['html', 'lint'], function () {
-  return gulp.src('app/app.js')
+gulp.task('build', ['html', 'lint', 'static'], function () {
+  return gulp.src('app/components/app/app.js')
     .pipe(browserify({
       insertGlobals: true,
       debug: !process.env.production || true
@@ -20,7 +20,12 @@ gulp.task('build', ['html', 'lint'], function () {
 
 gulp.task('watch', ['build'], function () {
   gulp.watch('./app/**/*.js', ['default'])
-  gulp.watch('./app/**/*.html', ['default'])
+  gulp.watch('./app/home/home.html', ['default'])
+})
+
+gulp.task('static', function () {
+  return gulp.src('./static/**/*.*')
+    .pipe(gulp.dest('./public'))
 })
 
 gulp.task('html', function () {
@@ -28,7 +33,7 @@ gulp.task('html', function () {
     .pipe(html2js({
       outputModuleName: 'templates',
       base: 'app',
-      rename: function (name) { return './' + name },
+      rename: function (name) { return name },
       useStrict: true
     }))
     .pipe(concat('templates.js'))

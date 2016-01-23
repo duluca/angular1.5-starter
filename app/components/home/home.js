@@ -1,8 +1,15 @@
 var angular = require('angular')
 
-angular.module('app.home', [])
+var moduleName = 'app.home'
+
+angular.module(moduleName, [])
   .component('home', {
-    controller: function () {
-      this.name = 'Friend'
-    }
+    templateUrl: 'components/home/home.html',
+    controller: HomeController
   })
+
+function HomeController () {
+  // this.name = 'Friend'
+}
+
+module.exports = moduleName
