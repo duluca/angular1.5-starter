@@ -3,7 +3,10 @@
   "version": "1.5.0",
   "description": "An Angular project starter, pre-wired with Browserify and Gulp",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "prestart": "gulp",
+    "start": "http-server"
+  },
   "repository": {
     "type": "git",
     "url": "https://duluca@github.com/duluca/angular-starter.git"
