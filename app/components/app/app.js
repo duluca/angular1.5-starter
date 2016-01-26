@@ -6,10 +6,10 @@ var angular = require('angular')
 require('../../../scratch/templates.js')
 
 angular.module('ngApp', [
-  require('ngComponentRouter'),
+  'ngComponentRouter',
   require('../home/home'),
   require('../notfound/notfound'),
-  'templates'])
+  'app.templates'])
   .component('app', {
     templateUrl: 'components/app/app.html',
     controller: ['$router', AppController]
