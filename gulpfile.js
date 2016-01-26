@@ -8,10 +8,9 @@ var gulp = require('gulp')
 var html2js = require('gulp-html2js')
 var concat = require('gulp-concat')
 var standard = require('gulp-standard')
-var sourcemaps = require('gulp-sourcemaps')
 var ngTemplates = require('gulp-ng-templates')
 
-gulp.task('build', ['templates', 'lint', 'static', 'deps'], function () {
+gulp.task('build', ['templates', 'lint', 'static'], function () {
   return gulp.src('app/components/app/app.js')
     .pipe(browserify({
       insertGlobals: true,
@@ -28,16 +27,6 @@ gulp.task('watch', ['build'], function () {
 gulp.task('static', function () {
   return gulp.src('./static/**/*.*')
     .pipe(gulp.dest('./public'))
-})
-
-gulp.task('deps', function () {
-  return gulp.src([
-    'node_modules/ngcomponentrouter/angular_1_router.js'
-  ])
-  .pipe(sourcemaps.init())
-  .pipe(concat('dependencies.js'))
-  .pipe(sourcemaps.write())
-  .pipe(gulp.dest('./public/js/'))
 })
 
 gulp.task('html', function () {

@@ -6,7 +6,7 @@ var angular = require('angular')
 require('../../../scratch/templates.js')
 
 angular.module('ngApp', [
-  'ngComponentRouter',
+  require('ngcomponentrouter'),
   require('../home/home'),
   require('../notfound/notfound'),
   'app.templates'])

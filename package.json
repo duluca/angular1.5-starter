@@ -36,6 +36,7 @@
     "gulp-browserify": "^0.5.1",
     "gulp-concat": "^2.5.2",
     "gulp-html2js": "^0.3.1",
+    "gulp-ng-templates": "0.0.6",
     "gulp-rename": "^1.2.2",
     "gulp-standard": "^5.2.2",
     "html2js": "^0.2.0",
