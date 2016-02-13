@@ -1,4 +1,4 @@
-# angular-starter
+# angular1.5-starter
 ## A batteries-included Angular 1.5+ Seed Project
 
 Angular Starter demonstrates usage the new component router for Angular 1.5+. Following the patterns demonstrated in this project will help write clean, maintainable code that is more inline with Angular 2.0 style coding.
