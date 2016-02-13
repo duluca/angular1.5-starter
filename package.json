@@ -1,5 +1,5 @@
 {
-  "name": "angular-starter",
+  "name": "angular1.5-starter",
   "version": "1.5.0",
   "description": "An Angular project starter, pre-wired with Browserify and Gulp",
   "main": "index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://duluca@github.com/duluca/angular-starter.git"
+    "url": "https://duluca@github.com/duluca/angular1.5-starter.git"
   },
   "keywords": [
     "Angular",
@@ -20,28 +20,28 @@
   "author": "Doguhan Uluca <duluca@gmail.com> (http://techtalkdc.com)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/duluca/angular-starter/issues"
+    "url": "https://github.com/duluca/angular1.5-starter/issues"
   },
-  "homepage": "https://github.com/duluca/angular-starter",
+  "homepage": "https://github.com/duluca/angular1.5-starter",
   "dependencies": {
-    "angular": "^1.5.0-rc.1",
-    "lodash": "^4.0.0",
-    "ngcomponentrouter": "^1.0.0"
+    "angular": "^1.5.0",
+    "lodash": "^4.3.0",
+    "ngcomponentrouter": "^1.4.1"
   },
   "devDependencies": {
     "browserify": "^13.0.0",
     "concat": "^1.0.0",
     "del": "^2.2.0",
-    "gulp": "^3.9.0",
+    "gulp": "^3.9.1",
     "gulp-browserify": "^0.5.1",
-    "gulp-concat": "^2.5.2",
+    "gulp-concat": "^2.6.0",
     "gulp-html2js": "^0.3.1",
     "gulp-ng-templates": "0.0.6",
     "gulp-rename": "^1.2.2",
     "gulp-standard": "^5.2.2",
     "html2js": "^0.2.0",
     "pipe": "^1.1.0",
-    "standard": "^5.4.1",
+    "standard": "^6.0.5",
     "vinyl-paths": "^2.1.0"
   }
 }

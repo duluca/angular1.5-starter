@@ -17,6 +17,7 @@ angular.module('ngApp', [
 
 function AppController ($router) {
   $router.config([
+    { path: '/', component: 'home', name: 'Home' },
     { path: '/home', component: 'home', name: 'Home' },
     { path: '/**', component: 'notfound', name: 'NotFound' }
   ])
