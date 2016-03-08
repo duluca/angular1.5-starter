@@ -9,3 +9,9 @@ Angular Starter demonstrates usage the new component router for Angular 1.5+. Fo
 - Bring npm to the browser with Browserify
 - Use Gulp.js to streamline build tasks
 - Use Standard.js for your coding style
+- 
+## How to run
+
+- `npm install`
+- If you already don't have also `npm install -g gulp http-server`
+- `npm start`
