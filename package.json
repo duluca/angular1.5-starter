@@ -24,24 +24,24 @@
   },
   "homepage": "https://github.com/duluca/angular1.5-starter",
   "dependencies": {
-    "angular": "^1.5.0",
-    "lodash": "^4.3.0",
-    "ngcomponentrouter": "^1.5.0"
+    "angular": "^1.5.2",
+    "lodash": "^4.6.1",
+    "ngcomponentrouter": "^2.0.0"
   },
   "devDependencies": {
     "browserify": "^13.0.0",
-    "concat": "^1.0.0",
+    "concat": "^2.0.0",
     "del": "^2.2.0",
     "gulp": "^3.9.1",
     "gulp-browserify": "^0.5.1",
     "gulp-concat": "^2.6.0",
-    "gulp-html2js": "^0.3.1",
+    "gulp-html2js": "^0.4.2",
     "gulp-ng-templates": "0.0.6",
     "gulp-rename": "^1.2.2",
-    "gulp-standard": "^5.2.2",
+    "gulp-standard": "^6.0.5",
     "html2js": "^0.2.0",
     "pipe": "^1.1.0",
-    "standard": "^6.0.5",
+    "standard": "^6.0.8",
     "vinyl-paths": "^2.1.0"
   }
 }
