@@ -25,8 +25,6 @@
   "homepage": "https://github.com/duluca/angular1.5-starter",
   "dependencies": {
     "angular": "^1.5.2",
-    "cli": "^0.11.2",
-    "http-server": "^0.9.0",
     "lodash": "^4.6.1",
     "ngcomponentrouter": "^2.0.0"
   },
@@ -35,6 +33,7 @@
     "concat": "^2.0.0",
     "del": "^2.2.0",
     "gulp": "^3.9.1",
+    "gulp-load-plugins": "^1.2.0",
     "gulp-browserify": "^0.5.1",
     "gulp-concat": "^2.6.0",
     "gulp-html2js": "^0.4.2",
