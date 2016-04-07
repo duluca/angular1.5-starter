@@ -2,17 +2,12 @@
  * Created by doguhanuluca on 4/2/15.
  */
 'use strict'
-
-var browserify = require('gulp-browserify')
 var gulp = require('gulp')
-var html2js = require('gulp-html2js')
-var concat = require('gulp-concat')
-var standard = require('gulp-standard')
-var ngTemplates = require('gulp-ng-templates')
+var $ = require('gulp-load-plugins')({lazy: true})
 
 gulp.task('build', ['templates', 'lint', 'static'], function () {
   return gulp.src('app/components/app/app.js')
-    .pipe(browserify({
+    .pipe($.browserify({
       insertGlobals: true,
       debug: !process.env.production || true
     }))
@@ -20,8 +15,8 @@ gulp.task('build', ['templates', 'lint', 'static'], function () {
 })
 
 gulp.task('watch', ['build'], function () {
-  gulp.watch('./app/**/*.js', ['default'])
-  gulp.watch('./app/home/home.html', ['default'])
+  $.watch('./app/**/*.js', ['default'])
+  $.watch('./app/home/home.html', ['default'])
 })
 
 gulp.task('static', function () {
@@ -31,20 +26,20 @@ gulp.task('static', function () {
 
 gulp.task('html', function () {
   return gulp.src('app/**/*.html')
-    .pipe(html2js({
+    .pipe($.html2js({
       outputModuleName: 'templates',
       base: 'app',
       rename: function (name) { return name },
       useStrict: true
     }))
-    .pipe(concat('templates.js'))
+    .pipe($.concat('templates.js'))
     .pipe(gulp.dest('./scratch'))
 })
 
 gulp.task('lint', function () {
   return gulp.src(['./app/**/*.js', './gulpfile.js'])
-    .pipe(standard())
-    .pipe(standard.reporter('default', {
+    .pipe($.standard())
+    .pipe($.standard.reporter('default', {
       breakOnError: true
     }))
 })
@@ -53,7 +48,7 @@ gulp.task('templates', function () {
   return gulp.src([
     'app/**/**.html'
   ])
-  .pipe(ngTemplates({
+  .pipe($.ngTemplates({
     filename: 'templates.js',
     module: 'app.templates',
     path: function (path, base) {

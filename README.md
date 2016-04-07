@@ -12,6 +12,8 @@ Angular Starter demonstrates usage the new component router for Angular 1.5+. Fo
 - 
 ## How to run
 
+- 'from the root application directory run the following:'
+- '(Optional) npm install http-server -g'
 - `npm install`
-- If you already don't have also `npm install -g gulp-cli http-server`
 - `npm start`
+- 'note and paste the "Available On" location'

@@ -2,6 +2,5 @@
 <project version="4">
   <component name="JavaScriptLibraryMappings">
     <file url="file://$PROJECT_DIR$" libraries="{angular1.5-starter node_modules}" />
-    <includedPredefinedLibrary name="Node.js Core" />
   </component>
 </project>
