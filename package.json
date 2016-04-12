@@ -25,8 +25,9 @@
   "homepage": "https://github.com/duluca/angular1.5-starter",
   "dependencies": {
     "angular": "^1.5.2",
+    "gulp-load-plugins": "^1.2.0",
     "lodash": "^4.6.1",
-    "ngcomponentrouter": "^2.0.0"
+    "ngcomponentrouter": "^2.1.0"
   },
   "devDependencies": {
     "browserify": "^13.0.0",
