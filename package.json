@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prestart": "gulp",
-    "start": "http-server"
+    "start": "node http-server.js"
   },
   "repository": {
     "type": "git",
@@ -24,8 +24,10 @@
   },
   "homepage": "https://github.com/duluca/angular1.5-starter",
   "dependencies": {
-    "angular": "^1.5.2",
+    "angular": "~1.5.11",
+    "gulp-jshint": "^2.0.4",
     "gulp-load-plugins": "^1.2.0",
+    "jshint": "^2.9.4",
     "lodash": "^4.6.1",
     "ngcomponentrouter": "^2.1.0"
   },

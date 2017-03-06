@@ -38,10 +38,9 @@ gulp.task('html', function () {
 
 gulp.task('lint', function () {
   return gulp.src(['./app/**/*.js', './gulpfile.js'])
-    .pipe($.standard())
-    .pipe($.standard.reporter('default', {
-      breakOnError: true
-    }))
+        .pipe($.jshint())
+        .pipe($.jshint.reporter('default'))
+        .pipe($.jshint.reporter('fail'));
 })
 
 gulp.task('templates', function () {
