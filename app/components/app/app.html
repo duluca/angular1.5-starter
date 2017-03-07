@@ -1,8 +1,12 @@
-<nav class="navbar navbar-default">
-    <ul class="nav navbar-nav">
-        <li><a ng-link="['/Home']">Home</a></li>
-    </ul>
-</nav>
+<md-toolbar class="md-hue-2">
+    <div class="md-toolbar-tools">
+    <md-button class="md-icon-button" aria-label="Menu">
+        <md-icon md-font-icon="mdi-menu"></md-icon>
+    </md-button>
+
+    <h2 flex md-truncate><a ng-link="['/Home']">Home</a></h2>
+    </div>
+</md-toolbar>
 <main>
     <ng-outlet></ng-outlet>
 </main>

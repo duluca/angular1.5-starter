@@ -4,7 +4,7 @@ var moduleName = 'app.about'
 
 angular.module(moduleName, [])
   .component('about', {
-    template: 'About {{ vm.name }}',
+    templateUrl: 'components/about/about.html',
     controllerAs: 'vm',
     controller: function () {
       var vm = this

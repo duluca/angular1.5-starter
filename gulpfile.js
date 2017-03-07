@@ -3,6 +3,7 @@
  */
 'use strict'
 var gulp = require('gulp')
+var merge = require('merge2')
 var $ = require('gulp-load-plugins')({lazy: true})
 
 gulp.task('build', ['templates', 'lint', 'static'], function () {
@@ -20,8 +21,18 @@ gulp.task('watch', ['build'], function () {
 })
 
 gulp.task('static', function () {
-  return gulp.src('./static/**/*.*')
+  var staticContent = gulp.src('./static/**/*.*')
     .pipe(gulp.dest('./public'))
+
+  var css = gulp.src(['node_modules/angular-material/angular-material.min.css'
+        , 'node_modules/mdi/css/materialdesignicons.min.css'
+        , 'node_modules/angular-material-data-table/dist/md-data-table.min.css'])
+      .pipe(gulp.dest('./public/styles'))
+
+  var mdiContent = gulp.src(['node_modules/mdi/fonts/*'])
+      .pipe(gulp.dest('./public/fonts'))
+
+  return merge(staticContent, css, mdiContent);
 })
 
 gulp.task('html', function () {

@@ -1,2 +1,10 @@
-<h1>Hello {{vm.name}}!</h1>
-<a href="#/about/you">What is this about?</a>
+ <md-content>
+    <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+      <h1>Hello {{vm.name}}!</h1>
+      <md-button ng-link="['/About', { name: vm.name }]" class="md-raised md-primary">What is this about?</md-button>
+      <div><md-icon md-font-icon="mdi-help-circle-outline"></md-icon>More component router samples can be found
+         <a href="https://github.com/brandonroberts/angularjs-component-router" target="_blank">here</a>.</div>
+      <div><md-icon md-font-icon="mdi-information-variant"></md-icon>Lookup for icons
+         <a href="https://materialdesignicons.com/" target="_blank">here</a>.</div>
+    </section>
+</md-content>

@@ -13,7 +13,7 @@ function HomeRoute () {
 }
 
 function HomeController () {
-  this.name = 'Friend'
+  this.name = 'you'
 }
 
 module.exports = moduleName
