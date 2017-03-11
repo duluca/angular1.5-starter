@@ -1,0 +1,29 @@
+<md-sidenav layout-fill style="min-width:300px"
+  class="md-sidenav-left md-whiteframe-2dp" md-component-id="left"
+    md-is-locked-open="vm.isAuthenticated() && $mdMedia('gt-sm')">
+    <md-toolbar hide-gt-sm>
+        <h1 class="md-toolbar-tools" ng-click="vm.closeLeftNav()">Angular Starter 1.5</h1>
+    </md-toolbar>
+    <md-content>
+        <md-list>
+            <md-list-item ng-click="vm.navigate(['/Home'])">
+                <md-icon md-font-icon="mdi-home" style="fill: green"></md-icon>
+                <p>Home</p>
+            </md-list-item>
+            <md-list-item ng-if="vm.isAuthenticated()"
+                ng-click="vm.navigate(['/About'])">
+                <md-icon md-font-icon="mdi-account-circle"></md-icon>
+                <p>Account</p>
+                <md-divider></md-divider>
+            </md-list-item>
+            <md-list-item class="md-2-line"
+                            ng-if="vm.isAdmin()"
+                            ng-click="vm.navigate(['/Admin/Dashboard'])">
+                <md-icon md-font-icon="mdi-account-multiple"></md-icon>
+                <div class="md-list-item-text">
+                    <h3>Admin Dashboard</h3>
+                </div>
+            </md-list-item>
+        </md-list>
+    </md-content>
+</md-sidenav>

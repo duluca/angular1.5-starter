@@ -1,0 +1,50 @@
+<div layout="column" layout-fill>
+    <md-toolbar>
+            <h1 class="md-toolbar-tools">
+                Log in
+            </h1>
+    </md-toolbar>
+    <md-content layout="row" layout-align="center">
+        <div layout="column" layout-fill layout-padding>
+            <form handle-submit method="post" ng-submit="vm.login()" name="loginForm" shake-that shake-callback="vm.shake">
+                <div layout="column" layout-align="center center">
+                    <md-input-container class="md-icon-float" style="width: 245px;">
+                        <label>E-mail</label>
+                        <md-icon md-font-icon="mdi-email"></md-icon>
+                        <input required name="email" ng-model="vm.email" type="email" md-autofocus>
+                        <div ng-messages="loginForm.email.$error">
+                            <span ng-message="required">Your e-mail adress is required.</span>
+                            <span ng-message="email">A valid e-mail address is needed.</span>
+                        </div>
+                    </md-input-container>
+                    <md-input-container class="md-icon-float" style="width: 245px;">
+                        <label>Password</label>
+                        <md-icon md-font-icon="mdi-key"></md-icon>
+                        <input required name="password" ng-model="vm.password" ng-minlength="6" type="password">
+                        <div ng-messages="loginForm.password.$error">
+                            <span ng-message="required">Your password is required.</span>
+                            <span ng-message="minlength">Minimum 6 characters are needed.</span>
+                        </div>
+                    </md-input-container>
+                    <div layout="row" layout-align="center center">
+                        <md-button type="submit" ng-disabled="loginForm.$invalid" class="md-raised md-primary">
+                            Log in
+                        </md-button>
+                    </div>
+                </div>
+            </form>
+            <div layout="row" layout-align="center center">
+                <p>
+                    <a href="#">Forgot your password?</a> <!--TODO: delete the href, use ng-link to wire this link up-->
+                </p>
+            </div>
+            <div layout="row" layout-align="center center">
+                <p class="text-muted">
+                    <!--TODO: delete the href, use ng-link to wire this link up-->
+                    <small>Don't have an account yet? <a href="#" style="padding-left:5px;">Sign Up Today!</a>
+                    </small>
+                </p>
+            </div>
+        </div>
+    </md-content>
+</div>

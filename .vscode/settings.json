@@ -3,5 +3,12 @@
     "editor.tabSize": 2,
     "editor.rulers": [120],
     "files.trimTrailingWhitespace": true,
-    "files.autoSave": "onFocusChange"
+    "files.autoSave": "onFocusChange",
+     "files.exclude": {
+        "scratch": true,
+        "node_modules": true,
+        "public": true,
+        "*_TEMPLATE.md": true,
+        ".idea": true
+     }
 }

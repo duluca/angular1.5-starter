@@ -1,12 +1,9 @@
-<md-toolbar class="md-hue-2">
-    <div class="md-toolbar-tools">
-    <md-button class="md-icon-button" aria-label="Menu">
-        <md-icon md-font-icon="mdi-menu"></md-icon>
-    </md-button>
-
-    <h2 flex md-truncate><a ng-link="['/Home']">Home</a></h2>
-    </div>
-</md-toolbar>
-<main>
-    <ng-outlet></ng-outlet>
-</main>
+<div layout="column" layout-fill>
+    <nav-bar></nav-bar>
+    <section layout="row" flex>
+        <side-nav></side-nav>
+        <md-content flex>
+            <ng-outlet></ng-outlet>
+        </md-content>
+    </section>
+</div>

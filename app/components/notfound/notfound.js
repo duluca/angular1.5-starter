@@ -1,5 +1,3 @@
-var angular = require('angular')
-
 var moduleName = 'app.404'
 
 angular.module(moduleName, [])

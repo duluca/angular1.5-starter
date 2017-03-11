@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="ngApp">
+<html lang="en" ng-app="ngApp" ng-strict-di>
 <head>
     <meta charset="utf-8">
     <base href="/">
@@ -7,10 +7,20 @@
     <link rel="stylesheet" href="styles/angular-material.min.css">
     <link rel="stylesheet" href="styles/materialdesignicons.min.css">
     <link rel="stylesheet" href="styles/md-data-table.min.css">
+    <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/spinner.css">
 </head>
-<body>
-    <app></app>
+<body class="content">
+    <app>
+        <div style="margin-top: 150px">
+            <div class="layout-row layout-fill layout-align-center-center">
+                <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+                </svg>
+            </div>
+            <h2 style="color: #420099;font-weight: bold;" class="layout-row layout-fill layout-align-center-center">Loading</h2>
+        </div>
+    </app>
     <script src="/js/app.js"></script>
 </body>
 </html>

@@ -1,0 +1,15 @@
+ <md-content layout-margin>
+    <section layout="column" layout-align="center center" layout-wrap>
+      <h1>Hello {{vm.name}}!</h1>
+      <md-button ng-link="['/About', { name: vm.name }]" class="md-raised md-primary">What is this about?</md-button>
+      <div><md-icon md-font-icon="mdi-help-circle-outline"></md-icon>More component router samples can be found
+         <a style="margin-left:5px" href="https://github.com/brandonroberts/angularjs-component-router" target="_blank">here</a>.</div>
+      <div><md-icon md-font-icon="mdi-information-variant"></md-icon>Lookup for icons
+         <a style="margin-left:5px" href="https://materialdesignicons.com/" target="_blank">here</a>.</div>
+    </section>
+</md-content>
+<div ng-if="!vm.isAuthenticated()" layout="column" layout-align="center center">
+    <md-whiteframe class="md-whiteframe-11dp" flex-sm="45" flex-gt-sm="35" flex-gt-md="25" layout layout-align="center center">
+        <login></login>
+    </md-whiteframe>
+</div>

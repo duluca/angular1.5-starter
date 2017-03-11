@@ -1,0 +1,21 @@
+<md-toolbar class="md-hue-2">
+    <div class="md-toolbar-tools">
+      <md-button class="md-icon-button" aria-label="Menu"
+          ng-show="vm.isAuthenticated()"
+          ng-click="vm.toggleLeftNav()"
+          hide-gt-sm>
+          <md-icon md-font-icon="mdi-menu"></md-icon>
+      </md-button>
+      <span>Angular Starter 1.5</span>
+      <span flex></span>
+        <md-button aria-label="logout"
+                class="md-fab md-raised md-mini"
+                ng-if="vm.isAuthenticated()"
+                ng-click="vm.logout()">
+        <md-tooltip>
+            Logout
+        </md-tooltip>
+        <md-icon md-font-icon="mdi-lock-open" style="color:red"></md-icon>
+      </md-button>
+    </div>
+</md-toolbar>
