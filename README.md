@@ -4,6 +4,8 @@
 
 Angular Starter demonstrates several important concepts in building a scalable code architecture for Angular 1.5.x. Following the patterns demonstrated in this project will help write clean, maintainable code that is more inline with Angular 2.0 style coding. 
 
+![Login](https://cloud.githubusercontent.com/assets/822159/23826750/3b66344c-0671-11e7-91e7-8c0dafa89309.png)
+
 > _Notice:_ While, this is my recommend Angular 1.x code architecture for production use, please not that this technique is not supported beyond Angular 1.5.11 due to changes in Angular 1.6, which lacks Angular Material 1.1.3 support and  ngComponentRouter@0.2.0. Read further below for more details.
 
 ## Why Use This Starter?
@@ -18,15 +20,19 @@ For a complete example of how to leverage majority of the features of the router
 - Learn how to write Angular components, ditch `$scope` forever
 - Create reusable and nested components
 - Define child root routes that can define their own route structure
+- Use Promise-based service calls
 
 ### Great Looking Mobile-First Design & Form Validation with Angular Material
+![Navigation](https://cloud.githubusercontent.com/assets/822159/23826746/235bc952-0671-11e7-9f46-5aa7f2242aff.png)
 - Learn how you can incorporate Angular Material with a responsive design in to your app
+- `SideNav` with a hamburger menu and a top `NavBar` provide a complimentary navigation experience
 - Properly validate Angular forms, leveraging ng-messages
 - Access rich and easy to use Material Desing Icons (mdi) icon library
 - Included Angular Material Data Table library for paginated datagrids (see source repo for sample usage)
-- `SideNav` with a hamburger menu and a top `NavBar` provide a complimentary navigation experience
+- `Ui` service that convienently wraps Material function for toast notifications and simple alerts to call from your code.
 
 ### Authentication Hooks and Role Based Navigation
+<img width="259" alt="Form Validation" src="https://cloud.githubusercontent.com/assets/822159/23826740/07bb83cc-0671-11e7-91fc-0b6c53ed9769.png">
 - Sample Authentication and Account services demonstrate how to do role based security
 - Enfore security and roles in navigation using ngComponentRouter lifecycle hooks
 - Utilize pre-built Material design login component with iOS style shake animation on error
