@@ -29,9 +29,9 @@
     "angular-aria": "~1.5.11",
     "angular-cookies": "^1.5.11",
     "angular-material": "~1.1.3",
-    "angular-material-data-table": "^0.10.10",
-    "angular-messages": "^1.5.11",
-    "angular-resource": "^1.5.11",
+    "angular-material-data-table": "~0.10.10",
+    "angular-messages": "~1.5.11",
+    "angular-resource": "~1.5.11",
     "lodash": "^4.6.1",
     "mdi": "^1.8.36",
     "ngcomponentrouter": "^2.1.0"
