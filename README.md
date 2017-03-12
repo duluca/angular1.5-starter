@@ -4,6 +4,8 @@
 
 Angular Starter demonstrates several important concepts in building a scalable code architecture for Angular 1.5.x. Following the patterns demonstrated in this project will help write clean, maintainable code that is more inline with Angular 2.0 style coding.
 
+Launch demo [here](http://ng15demo.thejavascriptpromise.com/).
+
 Pull the Docker Image [![](https://images.microbadger.com/badges/version/duluca/angular1.5-starter.svg)](https://microbadger.com/images/duluca/angular1.5-starter "Get your own version badge on microbadger.com") `docker pull duluca/angular1.5-starter`
 
 ![Login](https://cloud.githubusercontent.com/assets/822159/23826750/3b66344c-0671-11e7-91e7-8c0dafa89309.png)
