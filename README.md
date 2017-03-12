@@ -2,7 +2,7 @@
 ## A batteries-included Mobile-First Angular 1.5+ and Angular Material Seed Project
 > _TL;DR:_ Scroll to the bottom for commands you need to run
 
-Angular Starter demonstrates several important concepts in building a scalable code architecture for Angular 1.5.x. Following the patterns demonstrated in this project will help write clean, maintainable code that is more inline with Angular 2.0 style coding. 
+Angular Starter demonstrates several important concepts in building a scalable code architecture for Angular 1.5.x. Following the patterns demonstrated in this project will help write clean, maintainable code that is more inline with Angular 2.0 style coding.
 
 Pull the Docker Image [![](https://images.microbadger.com/badges/version/duluca/angular1.5-starter.svg)](https://microbadger.com/images/duluca/angular1.5-starter "Get your own version badge on microbadger.com") `docker pull duluca/angular1.5-starter`
 
@@ -11,7 +11,7 @@ Pull the Docker Image [![](https://images.microbadger.com/badges/version/duluca/
 > _Notice:_ While, this is my recommend Angular 1.x code architecture for production use, please not that this technique is not supported beyond Angular 1.5.11 due to changes in Angular 1.6, which lacks Angular Material 1.1.3 support and  ngComponentRouter@0.2.0. Read further below for more details.
 
 ## Why Use This Starter?
-This projects leverages components and the component router technology, similar to the way they're utilized in Angular 2. Using ngComponentRouter, Angular Material 1.1.3 and Angular 1.5.11, you can build great production quality applications. The component architecture allows you to follow clean code and SOLID principals, where you can build multi-hundred view apps without your code architecture collapsing under its own weight. 
+This projects leverages components and the component router technology, similar to the way they're utilized in Angular 2. Using ngComponentRouter, Angular Material 1.1.3 and Angular 1.5.11, you can build great production quality applications. The component architecture allows you to follow clean code and SOLID principals, where you can build multi-hundred view apps without your code architecture collapsing under its own weight.
 
 Meanwhile you'll be introduced to concepts that form the basis of Angular 2, while leveraging your Angular 1.x skills. If you're looking for a 3-5+ year solution, I _highly_ recommend you start with Angular 2, as that is the foundational framework that'll be supported for Angular v.Next beyond Angular 2.
 
@@ -50,22 +50,29 @@ For a complete example of how to leverage majority of the features of the router
 - Use JsHint for enforcing coding style standards (linting)
 
 ### Unit Testing
-- This is notably missing from this starter. It is a topic that too often gets left out. I recommend using Jasmine to test particular JavaScript functions, which you can isolate to their own files using `module.exports` and write simple unit tests. 
+- This is notably missing from this starter. It is a topic that too often gets left out. I recommend using Jasmine to test particular JavaScript functions, which you can isolate to their own files using `module.exports` and write simple unit tests.
 - Selenium tests are a great way to smoke test the major functions of your app. Getting too granular than that is a loosing battle.
 - Your mileage may vary with Protractor.
-- I highly recommend that all your important business logic to reside server-side and unit tested there. 
+- I highly recommend that all your important business logic to reside server-side and unit tested there.
 
 ### Find Your Way Around the Code
 - I recommend using Visual Studio Code as your code editor.
 - All dependencies come from npm. As a result, your first stop should be `package.json`. Understand what each package does.
 - All of your static assets should go under the `static` folder. `index.html` should rarely ever be updated. All `js` and `html` files are combined to a single file. A notable exception is `css` because you may want to change those links to `CDN` targets and I find it unreliable to compile, combine or minify 3rd party `css` resources.
 - All Angular Code goes under the `app` folder. App is bootstrapped in `app/component/app/app.js`.
-- `Public` folder is the only folder you should serve to the public internet. It is built from scratch everytime, so doesn't make any changes in there. Ignore the `scratch` folder completely. 
+- `Public` folder is the only folder you should serve to the public internet. It is built from scratch everytime, so doesn't make any changes in there. Ignore the `scratch` folder completely.
 
 ## How to Run the Project
-- from the root application directory run the following:
+There are two ways to run the project, one by building the source code yourself, the other by running the Docker image.
+
+### Run via Building Source Code
+- From the root application directory run the following:
 - `npm install gulp-cli -g`
-- (Optional) `npm install http-server -g`
+- `npm install http-server -g` (This is required to serve the project from your local folder)
 - `npm install`
 - `npm start`
-- Note and paste the "Available On" location to your browser
+
+### Run via Docker
+- `npm run image:run` -- See package.json for details. Default port will be http://localhost:8080
+
+For further details on how the Docker image is put together, refer to https://github.com/duluca/minimal-node-web-server.

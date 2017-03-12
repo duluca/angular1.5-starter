@@ -1,11 +1,14 @@
 {
   "name": "angular1.5-starter",
-  "version": "1.5.0",
+  "version": "1.5.11",
   "description": "An Angular project starter, pre-wired with Browserify and Gulp",
   "main": "index.js",
   "scripts": {
     "prestart": "gulp",
-    "start": "node http-server.js"
+    "start": "http-server",
+    "image:build": "gulp && docker build . -t duluca/angular1.5-starter",
+    "image:run": "docker run -p 8080:3000 duluca/angular1.5-starter",
+    "image:publish": "docker push duluca/angular1.5-starter"
   },
   "repository": {
     "type": "git",
