@@ -4,6 +4,8 @@
 
 Angular Starter demonstrates several important concepts in building a scalable code architecture for Angular 1.5.x. Following the patterns demonstrated in this project will help write clean, maintainable code that is more inline with Angular 2.0 style coding. 
 
+Pull the Docker Image [![](https://images.microbadger.com/badges/version/duluca/angular1.5-starter.svg)](https://microbadger.com/images/duluca/angular1.5-starter "Get your own version badge on microbadger.com") `docker pull duluca/angular1.5-starter`
+
 ![Login](https://cloud.githubusercontent.com/assets/822159/23826750/3b66344c-0671-11e7-91e7-8c0dafa89309.png)
 
 > _Notice:_ While, this is my recommend Angular 1.x code architecture for production use, please not that this technique is not supported beyond Angular 1.5.11 due to changes in Angular 1.6, which lacks Angular Material 1.1.3 support and  ngComponentRouter@0.2.0. Read further below for more details.
