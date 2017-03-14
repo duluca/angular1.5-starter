@@ -1,7 +1,8 @@
 var moduleName = 'app.admin'
 
 angular.module(moduleName, [
-	require('./dashboard/dashboard')
+		require('./dashboard/dashboard')
+	, require('./adminService')
 ]).component('admin', {
 	templateUrl: 'routes/admin/admin.html',
 	$routeConfig: [

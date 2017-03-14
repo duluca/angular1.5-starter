@@ -38,9 +38,9 @@ angular.module('ngApp', [
   .component('app', {
     templateUrl: 'components/app/app.html',
     $routeConfig: [
-      { path: '/', component: 'home', name: 'Home' },
-      { path: '/about', component: 'about', name: 'About' },
-      { path: '/admin/...', component: 'admin', name: 'Admin' },
-      { path: '/**', component: 'notfound', name: 'NotFound' }
+        { path: '/', component: 'home', name: 'Home' }
+      , { path: '/about', component: 'about', name: 'About' }
+      , { path: '/admin/...', component: 'admin', name: 'Admin' }
+      , { path: '/**', component: 'notfound', name: 'NotFound' }
     ]
   })
