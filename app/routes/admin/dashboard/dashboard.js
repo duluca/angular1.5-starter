@@ -1,7 +1,7 @@
 var constructor, moduleName = 'app.admin.dashboard'
 
 angular.module(moduleName, []).component('dashboard', {
-  templateUrl: 'routes/dashboard/dashboard.html',
+  templateUrl: 'routes/admin/dashboard/dashboard.html',
   controller: (constructor = ['Account', DashboardController])
 })
 

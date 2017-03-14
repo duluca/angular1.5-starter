@@ -16,7 +16,6 @@ angular.module('ngApp', [
     , require('../../routes/home/home')
     , require('../../routes/about/about')
     , require('../../routes/admin/admin')
-    , require('../../routes/dashboard/dashboard')
     , require('../../services/account')
     , require('../../services/auth')
     , require('../../services/ui')

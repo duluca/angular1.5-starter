@@ -22,7 +22,7 @@ For a complete example of how to leverage majority of the features of the router
 ## Concepts Covered
 ### Scalable Angular Architecure
 - Learn how to write Angular components, ditch `$scope` forever
-- Create reusable and nested components
+- Create reusable and nested components - see how the `Dashboard` component is a child of `Admin` the admin component. This is true from a routing perspective, folder organization perspective and dependency management perspective. Seperating all of these 3 concerns is critical in allowing multiple teams or team members to work on the same app without impacting each other or creating nasty merge conflicts.
 - Define child root routes that can define their own route structure
 - Use Promise-based service calls
 
