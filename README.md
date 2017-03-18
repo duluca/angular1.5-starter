@@ -1,4 +1,4 @@
-# angular1.5-starter
+# Mobile-First Angular 1.5+ and Angular Material Seed
 ## A batteries-included Mobile-First Angular 1.5+ and Angular Material Seed Project
 > _TL;DR:_ Scroll to the bottom for commands you need to run
 
