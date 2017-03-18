@@ -1,5 +1,5 @@
-# Mobile-First Angular 1.5+ and Angular Material Seed
-## A batteries-included Mobile-First Angular 1.5+ and Angular Material Seed Project
+# Angular 1.5+ and Angular Material Starter Project
+## A batteries-included Mobile-First Angular 1.5+ and Angular Material Seed
 > _TL;DR:_ Scroll to the bottom for commands you need to run
 
 Angular Starter demonstrates several important concepts in building a scalable code architecture for Angular 1.5.x. Following the patterns demonstrated in this project will help write clean, maintainable code that is more inline with Angular 2.0 style coding.
