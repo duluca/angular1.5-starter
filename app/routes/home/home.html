@@ -1,11 +1,39 @@
- <md-content layout-margin>
+<md-content layout-margin>
     <section layout="column" layout-align="center center" layout-wrap>
-      <h1>Hello {{vm.name}}!</h1>
-      <md-button ng-link="['/About', { name: vm.name }]" class="md-raised md-primary">What is this about?</md-button>
-      <div><md-icon md-font-icon="mdi-help-circle-outline"></md-icon>More component router samples can be found
-         <a style="margin-left:5px" href="https://github.com/brandonroberts/angularjs-component-router" target="_blank">here</a>.</div>
-      <div><md-icon md-font-icon="mdi-information-variant"></md-icon>Lookup for icons
-         <a style="margin-left:5px" href="https://materialdesignicons.com/" target="_blank">here</a>.</div>
+        <md-card>
+            <md-card-title>
+                <md-card-title-text>
+                    <span class="md-headline">Hello {{vm.name}}!</span>
+                    <span class="md-subhead">Welcome</span>
+                </md-card-title-text>
+            </md-card-title>
+            <md-card-content>
+                <p>Login with <i class="space-around">admin@test.com</i> to see the Admin dashboard and role-based navigation
+                    in action. Any <i class="space-around">@test.com</i> address and any password will work.</p>
+                <p>Open console logs to see router lifecycle events in action on the Admin dashboard, like <i class="space-around">$canActivate</i>                    and <i class="space-around">$onActivate.</i></p>
+                <p>Run this demo on your machine with Docker. <b class="space-around">docker pull duluca/angular1.5-starter</b></p>
+                <p>Check out <a class="space-around" href="https://github.com/duluca/angular1.5-starter" target="_blank">https://github.com/duluca/angular1.5-starter</a>                    for more.</p>
+            </md-card-content>
+        </md-card>
+        <md-button ng-link="['/About', { name: vm.name }]" class="md-raised md-primary">What is this about?</md-button>
+         <div>
+            <p>
+                <md-icon md-font-icon="mdi-angularjs"></md-icon>Check out Angular Material component demos
+                <a class="space-left" href="https://material.angularjs.org/latest/" target="_blank">here</a>.
+            </p>
+        </div>
+        <div>
+            <p>
+                <md-icon md-font-icon="mdi-help-circle-outline"></md-icon>More component router samples can be found
+                <a class="space-left" href="https://github.com/brandonroberts/angularjs-component-router" target="_blank">here</a>.
+            </p>
+        </div>
+        <div>
+            <p>
+                <md-icon md-font-icon="mdi-information-variant"></md-icon>Lookup more icons
+                <a class="space-left" href="https://materialdesignicons.com/" target="_blank">here</a>.
+            </p>
+        </div>
     </section>
 </md-content>
 <div ng-if="!vm.isAuthenticated()" layout="column" layout-align="center center">

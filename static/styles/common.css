@@ -113,3 +113,13 @@ img {
   display: inline;
   margin: 0 auto;
 }
+
+.space-left {
+    margin-left: 5px;
+}
+
+.space-around {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+

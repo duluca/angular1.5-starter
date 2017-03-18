@@ -18,7 +18,7 @@
             </md-list-item>
             <md-list-item class="md-2-line"
                             ng-if="vm.isAdmin()"
-                            ng-click="vm.navigate(['/Admin/Dashboard'])">
+                            ng-click="vm.navigate(['/Admin/Dashboard', { someParam: 'justAdemo'}])">
                 <md-icon md-font-icon="mdi-account-multiple"></md-icon>
                 <div class="md-list-item-text">
                     <h3>Admin Dashboard</h3>
