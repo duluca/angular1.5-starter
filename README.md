@@ -13,7 +13,7 @@ Pull the Docker Image [![](https://images.microbadger.com/badges/version/duluca/
 > _Notice:_ While, this is my recommend Angular 1.x code architecture for production use, please not that this technique is not supported beyond Angular 1.5.11 due to changes in Angular 1.6, which lacks Angular Material 1.1.3 support and  ngComponentRouter@0.2.0. Read further below for more details.
 
 ## Why Use This Starter?
-This projects leverages components and the component router technology, similar to the way they're utilized in Angular 2. Using ngComponentRouter, Angular Material 1.1.3 and Angular 1.5.11, you can build great production quality applications. The component architecture allows you to follow clean code and SOLID principals, where you can build multi-hundred view apps without your code architecture collapsing under its own weight.
+This project leverages components and the component router technology, similar to the way they're utilized in Angular 2. Using ngComponentRouter, Angular Material 1.1.3 and Angular 1.5.11, you can build great production quality applications. The component architecture allows you to follow clean code and SOLID principals, where you can build multi-hundred view apps without your code architecture collapsing under its own weight.
 
 Meanwhile you'll be introduced to concepts that form the basis of Angular 2, while leveraging your Angular 1.x skills. If you're looking for a 3-5+ year solution, I _highly_ recommend you start with Angular 2, as that is the foundational framework that'll be supported for Angular v.Next beyond Angular 2.
 
@@ -80,4 +80,4 @@ There are two ways to run the project, one by building the source code yourself,
 For further details on how the Docker image is put together, refer to https://github.com/duluca/minimal-node-web-server.
 
 ### Dev Norms
-See `dev-norms.md` for a set of senisble default norms for your team to follow. Modify and update as a living repository of your norms.
+See `dev-norms.md` for a set of sensible default norms for your team to follow. Modify and update as a living repository of your norms.
