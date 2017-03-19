@@ -78,3 +78,6 @@ There are two ways to run the project, one by building the source code yourself,
 - `npm run image:run` -- See package.json for details. Default port will be http://localhost:8080
 
 For further details on how the Docker image is put together, refer to https://github.com/duluca/minimal-node-web-server.
+
+### Dev Norms
+See `dev-norms.md` for a set of senisble default norms for your team to follow. Modify and update as a living repository of your norms.
