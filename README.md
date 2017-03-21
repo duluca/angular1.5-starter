@@ -81,3 +81,6 @@ For further details on how the Docker image is put together, refer to https://gi
 
 ### Dev Norms
 See `dev-norms.md` for a set of senisble default norms for your team to follow. Modify and update as a living repository of your norms.
+
+### Did You Know You Don't Need Gulp?
+You can leverage `npm` as your task runner. Here's a sample [gist](https://gist.github.com/duluca/4468df69f04d60478af824c23fe094f9) to get you started!
