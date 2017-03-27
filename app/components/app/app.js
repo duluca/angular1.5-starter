@@ -20,6 +20,7 @@ angular.module('ngApp', [
     , require('../../services/auth')
     , require('../../services/ui')
     , require('../../services/cache')
+    , require('../../filters/percentage')
     , require('../../../scratch/templates')
     ])
   .config(['$mdIconProvider', function($mdIconProvider) {

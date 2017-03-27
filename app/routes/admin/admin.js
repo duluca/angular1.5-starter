@@ -3,6 +3,7 @@ var moduleName = 'app.admin'
 angular.module(moduleName, [
 		require('./dashboard/dashboard')
 	,	require('./dashboard-two/dashboard-two')
+	, require('./some-shared-component/some-shared-component')
 	, require('./adminService')
 ]).component('admin', {
 	templateUrl: 'routes/admin/admin.html',

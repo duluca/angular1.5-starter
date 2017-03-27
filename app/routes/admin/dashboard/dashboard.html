@@ -1,7 +1,10 @@
 <md-content>
   <section layout="column" layout-align="center center" layout-wrap>
     <h2>Dashboard</h2>
-    <p>Got some response from {{vm.someResult}}</p>
+    <h3>Parent Component Binding</h3>
+    <span>{{vm.mySyncValue}} --> {{vm.someResult}}</span>
+    <h3>Child Component Binding</h3>
+    <some-shared-component info="vm.mySyncValue" result="vm.someResult"></some-shared-component>
     <md-button class="md-warn" ng-click="vm.doSomethingInteresting()">
       Go to the better Dashboard
     </md-button>

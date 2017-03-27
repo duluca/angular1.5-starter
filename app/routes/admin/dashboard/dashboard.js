@@ -15,6 +15,7 @@ function DashboardController(Account, AdminService, Ui, $rootRouter) {
   var vm = this
   vm.email = Account.getCurrentUserEmail()
   vm.someResult = '...'
+  vm.mySyncValue = 'Waiting for some HTTP response'
 
   vm.$routerOnActivate = function (toRoute) {
     console.log('onactivate: ' + toRoute.params.someParam)
