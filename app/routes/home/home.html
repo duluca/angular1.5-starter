@@ -10,13 +10,14 @@
             <md-card-content>
                 <p>Login with <i class="space-around">admin@test.com</i> to see the Admin dashboard and role-based navigation
                     in action. Any <i class="space-around">@test.com</i> address and any password will work.</p>
-                <p>Open console logs to see router lifecycle events in action on the Admin dashboard, like <i class="space-around">$canActivate</i>                    and <i class="space-around">$onActivate.</i></p>
+                <p>See router lifecycle events, shared components and binding in action on the <a ng-link="['/Admin/Dashboard', { someParam: 'fromHome' }]">Admin Dashboard</a>.
+                    Open console logs to see events fire like <i class="space-around">$canActivate</i> and <i class="space-around">$onActivate.</i></p>
                 <p>Run this demo on your machine with Docker. <b class="space-around">docker pull duluca/angular1.5-starter</b></p>
                 <p>Check out <a class="space-around" href="https://github.com/duluca/angular1.5-starter" target="_blank">https://github.com/duluca/angular1.5-starter</a>                    for more.</p>
             </md-card-content>
         </md-card>
         <md-button ng-link="['/About', { name: vm.name }]" class="md-raised md-primary">What is this about?</md-button>
-         <div>
+        <div>
             <p>
                 <md-icon md-font-icon="mdi-angularjs"></md-icon>Check out Angular Material component demos
                 <a class="space-left" href="https://material.angularjs.org/latest/" target="_blank">here</a>.
