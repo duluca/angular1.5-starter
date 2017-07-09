@@ -4,6 +4,14 @@
 
 Angular Starter demonstrates several important concepts in building a scalable code architecture for Angular 1.5.x. Following the patterns demonstrated in this project will help write clean, maintainable code that is more inline with Angular 2.0 style coding.
 
+> Read the *Building Scalable and Beautiful AngularJS Apps Series*: Learn how to properly architect front-end applications
+  - [Leveraging Existing Skills and Pushing the Envelope](https://www.excella.com/insights/building-scalable-and-beautiful-angular-apps-part-one)
+  - [Web App Packaging and Publishing Best Practices](https://www.excella.com/insights/building-scalable-and-beautiful-angular-apps-part-two)
+  - [Organized Code and Scalable Angular Architecture](https://www.excella.com/insights/building-scalable-and-beautiful-angular-apps-part-three)
+  - [Reusable Components, Templates, and Services](https://www.excella.com/insights/building-scalable-and-beautiful-angular-apps-part-four)
+  - [Default Beauty and Great Mobile-First UX with Angular Material](https://www.excella.com/insights/building-scalable-and-beautiful-angular-apps-part-five)
+  - [Navigation Lifecycle, Authentication Hooks, and Role Based Navigation](https://www.excella.com/insights/building-scalable-and-beautiful-angular-apps-part-6)
+
 Launch demo [here](http://ng15demo.thejavascriptpromise.com/).
 
 Pull the Docker Image [![](https://images.microbadger.com/badges/version/duluca/angular1.5-starter.svg)](https://microbadger.com/images/duluca/angular1.5-starter "Get your own version badge on microbadger.com") `docker pull duluca/angular1.5-starter`
