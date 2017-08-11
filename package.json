@@ -3,12 +3,20 @@
   "version": "1.5.11",
   "description": "An Angular project starter, pre-wired with Browserify and Gulp",
   "main": "index.js",
+  "imageRepo": "duluca/angular1.5-starter",
+  "imageName": "angular1.5-starter",
+  "imagePort": "8080",
   "scripts": {
     "prestart": "gulp",
     "start": "http-server",
-    "image:build": "gulp && docker build . -t duluca/angular1.5-starter",
-    "image:run": "docker run -p 8080:3000 duluca/angular1.5-starter",
-    "image:publish": "docker push duluca/angular1.5-starter"
+    "docker:build": "with-package docker image build . -t pkg.imageRepo:pkg.version && npm run docker:tag",
+    "docker:tag": "with-package docker image tag pkg.imageRepo:pkg.version pkg.imageRepo:latest",
+    "docker:run": "npm run docker:clean && npm run docker:runHelper",
+    "docker:runHelper": "with-package docker run --name pkg.imageName -d -p pkg.imagePort:3000 pkg.imageRepo",
+    "docker:publish": "with-package docker image push pkg.imageRepo",
+    "docker:clean": "with-package docker rm -f pkg.imageName || true",
+    "docker:taillogs": "with-package docker logs -f pkg.imageName",
+    "docker:debug": "npm run docker:build && npm run docker:run && sleep 1 && with-package open 'http://localhost:pkg.imagePort' && npm run docker:taillogs"
   },
   "repository": {
     "type": "git",
@@ -54,6 +62,7 @@
     "vinyl-buffer": "^1.0.0",
     "vinyl-paths": "^2.1.0",
     "vinyl-source-stream": "^1.1.0",
+    "with-package": "^0.2.0",
     "yargs": "^3.5.4"
   }
 }
