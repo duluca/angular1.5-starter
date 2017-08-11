@@ -77,13 +77,11 @@ There are two ways to run the project, one by building the source code yourself,
 
 ### Run via Building Source Code
 - From the root application directory run the following:
-- `npm install gulp-cli -g`
-- `npm install http-server -g` (This is required to serve the project from your local folder)
 - `npm install`
 - `npm start`
 
 ### Run via Docker
-- `npm run docker:debug` -- See package.json for details. Default port will be http://localhost:8080
+- `npm run docker:debug` -- Build and debug your Docker container. See package.json scripts for details. Default port will be http://localhost:8080
 
 For further details on how the Docker image is put together, refer to https://github.com/duluca/minimal-node-web-server.
 
