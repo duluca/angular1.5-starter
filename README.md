@@ -1,7 +1,4 @@
 # Angular 1.5+ and Angular Material Starter Project
-<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/fEzUTKW7ygFp1AjarhfvKNcR/duluca/angular1.5-starter'>
-  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/fEzUTKW7ygFp1AjarhfvKNcR/duluca/angular1.5-starter.svg' />
-</a>
 
 ## A batteries-included Mobile-First Angular 1.5+ and Angular Material Seed
 > _TL;DR:_ Scroll to the bottom for commands you need to run
